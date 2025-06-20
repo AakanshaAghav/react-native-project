@@ -1,0 +1,22 @@
+buildscript {
+    ext {
+        buildToolsVersion = "35.0.0"
+        minSdkVersion = 24
+        compileSdkVersion = 35
+        targetSdkVersion = 35
+        ndkVersion = "26.1.10909125" // Compatible with bit_cast issue
+        kotlinVersion = "1.8.10"     // Use stable version for Reanimated
+    }
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("com.android.tools.build:gradle:8.3.1") // Pin version
+        classpath("com.facebook.react:react-native-gradle-plugin")
+        classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
+         classpath 'com.google.gms:google-services:4.3.15' // version may vary
+    }
+}
+
+apply plugin: "com.facebook.react.rootproject"

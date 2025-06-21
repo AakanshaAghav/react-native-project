@@ -4,7 +4,7 @@ import MapView, { Marker } from 'react-native-maps';
 import MapViewDirections from 'react-native-maps-directions';
 import database from '@react-native-firebase/database';
 
-const GOOGLE_MAPS_APIKEY = 'AIzaSyAohVcPJubpemVx-1Eazhh_Fjbsuab70rc'; // Replace with a working one
+const GOOGLE_MAPS_APIKEY = 'Your_API_Key'; // Replace with a working one
 
 export default function DeliveryMapScreen({ route }) {
   const { orderId } = route.params;
